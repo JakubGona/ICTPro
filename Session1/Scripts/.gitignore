@@ -1,0 +1,5 @@
+Session1/Lib/
+Session1/Scripts/
+Session1/include/
+__pycache__/
+*.pyc
