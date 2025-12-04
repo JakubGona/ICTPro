@@ -1,5 +1,5 @@
-Session1/Lib/
-Session1/Scripts/
-Session1/Include/
+Session/Lib/
+Session/Scripts/
+Session/Include/
 __pycache__/
 *.pyc
