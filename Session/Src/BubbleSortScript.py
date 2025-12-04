@@ -1,25 +1,32 @@
 """
-Bubble sort
-
-Zadaná čísla:
-15 7 20 7 3 6 11 12 20
+Bubble sort – s výpisom porovnávaných čísel
 """
 
-numbers = [15, 7, 20, 7, 3, 6, 11, 12, 20]
+numbers = [15, 20, 7, 3, 6, 11, 12]
 
-print("Pôvodné čísla:")
-print(numbers)
-
-# Bubble sort
 n = len(numbers)
+
+# Pôvodný stav
+print("Pôvodné čísla:")
+print(*numbers)
+print()
 
 for i in range(n - 1):
     for j in range(n - 1 - i):
+
+        # výpis porovnávaných čísel
+        print(f"Porovnávam: {numbers[j]} a {numbers[j+1]}")
+
+        # ak je ľavé väčšie → prehodíme
         if numbers[j] > numbers[j + 1]:
             numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
 
-    # výpis po jednom "kole"
-    print(numbers)
+        # výpis po porovnaní/výmene
+        print(*numbers)
+        print()
 
-print("\nVýsledok (zoradené):")
-print(numbers)
+    print("Koniec kola", i + 1)
+    print()
+
+print("Výsledok:")
+print(*numbers)
